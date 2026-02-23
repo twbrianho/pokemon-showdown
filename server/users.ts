@@ -690,7 +690,7 @@ export class User extends Chat.MessageContext {
 			// in without a token even when noguestsecurity is true, for security reasons.
 			// However, since custom domains cannot fetch tokens from Smogon due to CORS,
 			// we bypass this check so admins can actually log into their own servers.
-			return "1";
+			return "2"; // 2 means registered UserType, ignoring normal restrictions.
 		}
 
 		if (!token || token.startsWith(";")) {
