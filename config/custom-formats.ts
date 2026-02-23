@@ -12,14 +12,12 @@ export const Formats: FormatList = [
 		desc: `Custom format allowing ALL Pokémon.`,
 		mod: "dnd",
 		ruleset: [
-			"! Obtainable",
 			"Standard AG", // Base "Anything Goes" rules
 			"NatDex Mod", // Allow National Dex Pokémon
 			"+CAP", // Allow CAP (Create-A-Pokémon) fakemon
 			"+Custom", // Allow any custom fakemon
 			"+Future", // Allow future generation Pokémon
-			"+Past", // Allow past generation Pokemon and mechanics (Megas)
-			"+Gigantamax", // Allow Gigantamax Pokemon
+			"!Obtainable", // Negate strict obtainability checks
 		],
 	},
 	{
@@ -28,15 +26,11 @@ export const Formats: FormatList = [
 		mod: "dnd",
 		gameType: "doubles",
 		ruleset: [
-			"! Obtainable",
 			"Standard AG", // Base "Anything Goes" rules
 			"NatDex Mod", // Allow National Dex Pokémon
 			"+CAP", // Allow CAP (Create-A-Pokémon) fakemon
 			"+Custom", // Allow any custom fakemon
-			"+Future", // Allow future generation Pokémon
-			"+Unreleased", // Allow unreleased Pokémon
-			"+Past", // Allow past generation Pokémon and mechanics (Megas)
-			"+Gigantamax", // Allow Gigantamax forms
+			"!Obtainable", // Negate strict obtainability checks
 		],
 	},
 ];
