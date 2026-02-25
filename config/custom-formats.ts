@@ -9,28 +9,45 @@ export const Formats: FormatList = [
 	},
 	{
 		name: "[Gen 9] PokeDnD Standard",
-		desc: `Custom format allowing ALL Pokémon.`,
+		desc: `Custom format allowing ALL Pokémon with no restrictions.`,
 		mod: "dnd",
 		ruleset: [
-			"Standard AG", // Base "Anything Goes" rules
-			"NatDex Mod", // Allow National Dex Pokémon
-			"+CAP", // Allow CAP (Create-A-Pokémon) fakemon
-			"+Custom", // Allow any custom fakemon
-			"+Future", // Allow future generation Pokémon
-			"!Obtainable", // Negate strict obtainability checks
+			"Team Preview",
+			"HP Percentage Mod",
+			"Cancel Mod",
+			"Endless Battle Clause",
+			// NatDex Mod components WITHOUT the natDexTier validation:
+			"+Unobtainable",
+			"+Past",
+			"Sketch Post-Gen 7 Moves",
+			// Allow everything else:
+			"+CAP",
+			"+Custom",
+			"+Future",
+			"+LGPE",
+			"+Nonexistent",
 		],
 	},
 	{
 		name: "[Gen 9] PokeDnD Doubles",
-		desc: `Custom Doubles format allowing ALL Pokémon.`,
+		desc: `Custom Doubles format allowing ALL Pokémon with no restrictions.`,
 		mod: "dnd",
 		gameType: "doubles",
 		ruleset: [
-			"Standard AG", // Base "Anything Goes" rules
-			"NatDex Mod", // Allow National Dex Pokémon
-			"+CAP", // Allow CAP (Create-A-Pokémon) fakemon
-			"+Custom", // Allow any custom fakemon
-			"!Obtainable", // Negate strict obtainability checks
+			"Team Preview",
+			"HP Percentage Mod",
+			"Cancel Mod",
+			"Endless Battle Clause",
+			// NatDex Mod components WITHOUT the natDexTier validation:
+			"+Unobtainable",
+			"+Past",
+			"Sketch Post-Gen 7 Moves",
+			// Allow everything else:
+			"+CAP",
+			"+Custom",
+			"+Future",
+			"+LGPE",
+			"+Nonexistent",
 		],
 	},
 ];
