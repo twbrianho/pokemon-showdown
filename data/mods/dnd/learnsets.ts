@@ -2,7 +2,7 @@ export const Learnsets: import("../../../sim/dex-species").ModdedLearnsetDataTab
 	{
 		fakemontest: {
 			learnset: {
-				"17black": ["9M"],
+				"17black": ["9L1"],
 				hyperbeam: ["9L1"],
 				earthquake: ["9M"],
 				dragonclaw: ["9M"],
